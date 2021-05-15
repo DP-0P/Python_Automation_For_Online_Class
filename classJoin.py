@@ -16,10 +16,10 @@ firefox_options.add_argument("--disable-notifications")
 driver = webdriver.Firefox(executable_path=r'C:\\Users\\user\\Desktop\\Python Automation\\geckodriver.exe')
 driver.maximize_window()
 
-URL = "https://meet.google.com/fxf-cwxo-tui"
+meetLink = "https://meet.google.com/fxf-cwxo-tui"
 
-url = "https://stackoverflow.com/users/login"
-driver.get(url)
+stackOverflowLink = "https://stackoverflow.com/users/login"
+driver.get(stackOverflowLink)
 try:
     login_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "s-btn__google")))
     time.sleep(2)
@@ -36,7 +36,7 @@ try:
 except Exception as e:
     print(e)
 
-driver.get(URL)
+driver.get(meetLink)
 
 
 try:
