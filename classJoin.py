@@ -23,11 +23,11 @@ def sign_in_gmail():
         login_btn.click()
         email_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "identifierId")))
         time.sleep(2)
-        email_input.send_keys("deepakpattnayak2013@gmail.com")
+        email_input.send_keys("example@gmail.com")
         email_input.send_keys(Keys.ENTER)
         pass_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "password")))
         time.sleep(2)
-        pass_input.send_keys("gofuckyourself")
+        pass_input.send_keys("password")
         pass_input.send_keys(Keys.ENTER)
         print("Logged in into Gmail account")
     except Exception as e:
