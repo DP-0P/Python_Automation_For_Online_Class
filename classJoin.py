@@ -9,6 +9,9 @@ import time
 import subprocess
 import webbrowser
 
+subprocess.Popen('C:\\Users\\user\\AppData\\Local\\Discord\\app-1.0.9001\\Discord.exe')
+time.sleep(8)
+
 # firefox_options = Options()
 # firefox_options.add_argument("start-maximized")
 # firefox_options.add_argument("disable-popup-blocking")
@@ -26,17 +29,20 @@ try:
     login_btn.click()
     email_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "identifierId")))
     time.sleep(2)
-    email_input.send_keys()
+    email_input.send_keys("deepakpattnayak2013@gmail.com")
     email_input.send_keys(Keys.ENTER)
     pass_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "password")))
     time.sleep(2)
-    pass_input.send_keys()
+    pass_input.send_keys("gofuckyourself")
     pass_input.send_keys(Keys.ENTER)
     print("Logged in into Gmail account")
 except Exception as e:
     print(e)
+time.sleep(2)
 
 driver.get(meetLink)
+webbrowser.open("https://www.youtube.com")
+time.sleep(5)
 
 
 try:
@@ -56,13 +62,17 @@ try:
 except Exception as e:
     print(e)
     
+time.sleep(5)
+    
 
 try:
     join_now = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,
                                                                                   "/html/body/div[1]/c-wiz/div/div/div[7]/div[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/span")))
     join_now.click()
 except Exception as e:
-        print(e)   
+        print(e) 
+        
+time.sleep(1000)  
 
 
 
