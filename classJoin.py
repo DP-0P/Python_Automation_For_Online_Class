@@ -19,7 +19,7 @@ time.sleep(8)
 driver = webdriver.Firefox(executable_path=r'C:\\Users\\user\\Desktop\\Python Automation\\geckodriver.exe')
 driver.maximize_window()
 
-meetLink = "https://meet.google.com/fxf-cwxo-tui"
+meetLink = "" #enter meet room link
 
 stackOverflowLink = "https://stackoverflow.com/users/login"
 driver.get(stackOverflowLink)
