@@ -7,6 +7,6 @@
 
 ## To run the script enter the command
 
-`Python `
+  `Python classJoin.py`
 
 
