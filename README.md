@@ -1,1 +1,1 @@
-# Python Script to join my online class
+# Python Script to join online class
