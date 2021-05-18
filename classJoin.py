@@ -9,7 +9,7 @@ import time
 import subprocess
 import webbrowser
 
-subprocess.Popen()
+subprocess.Popen() #to open discord 
 time.sleep(8)
 
 driver = webdriver.Firefox(executable_path=r'C:\\Users\\user\\Desktop\\Python Automation\\geckodriver.exe')
