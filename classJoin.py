@@ -37,7 +37,7 @@ except Exception as e:
 time.sleep(2)
 
 driver.get(meetLink)
-webbrowser.open("https://www.youtube.com")
+webbrowser.open() #to open any site on default browser
 time.sleep(5)
 
 
