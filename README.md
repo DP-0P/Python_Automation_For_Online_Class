@@ -9,4 +9,7 @@
 
   `Python classJoin.py`
 
-
+```sh
+- `pip install selenium`
+- `pip install urllib3`
+```
