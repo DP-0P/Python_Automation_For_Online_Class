@@ -6,9 +6,6 @@ pip install selenium
 pip install urllib3
 ```
 ## To run the script enter the command:
-
-  `Python classJoin.py`
-
 ```sh
 python classJoin.py
 ```
